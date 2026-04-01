@@ -102,7 +102,7 @@ function WithdrawHistory() {
           </Typography>
         </Stack>
         {/* Tabs */}
-        <Tabs
+        {/* <Tabs
           value={tabValue}
           onChange={handleChange}
           TabIndicatorProps={{ style: { display: "none" } }}
@@ -139,7 +139,7 @@ function WithdrawHistory() {
             }}
           />
 
-        </Tabs>
+        </Tabs> */}
 
         {/* Withdrawal List */}
         <Box sx={{ mt: 3 }}>

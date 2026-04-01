@@ -14,7 +14,7 @@ export default function About() {
           <Box sx={styles.newsBox}>
             <Box component="img" src={logo} alt="logo" sx={styles.logo} />
 
-            <Box sx={styles.certificatesContainer}>
+            {/* <Box sx={styles.certificatesContainer}>
               <Box
                 component="img"
                 src={certificate1}
@@ -27,7 +27,7 @@ export default function About() {
                 alt="certificate 2"
                 sx={styles.certificate}
               />
-            </Box>
+            </Box> */}
 
             <Box sx={styles.aboutSection}>
             <Typography sx={styles.aboutTitle}>About Us:</Typography>

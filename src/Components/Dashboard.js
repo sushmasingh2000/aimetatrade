@@ -333,7 +333,10 @@ export default function Dashboard() {
                             <ListItem className="news_text">
                                 <ListItemButton component={Link} to="/News">
                                     <i className="ri-megaphone-line"></i>
-                                    <marquee><Typography sx={{ fontSize: "12px !important" }}><span>{member_dashboard?.m00_comment}</span></Typography></marquee>
+                                    <marquee><Typography sx={{ fontSize: "12px !important" }}><span>
+                                        {/* {member_dashboard?.m00_comment} */}
+                                        Welcome to AI Meta Trade! Unlock Your Trading Potential – Start Your Profitable Journey to Financial Freedom Now!
+                                        </span></Typography></marquee>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>

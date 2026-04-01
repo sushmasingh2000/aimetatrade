@@ -15,13 +15,13 @@
             <key>IsRemovable</key>
             <true/>
             <key>Label</key>
-            <string>IFC Trade</string>
+            <string>AI Meta Trade</string>
             <key>PayloadDescription</key>
-            <string>Installs IFC Trade PWA on your home screen</string>
+            <string>Installs AI Meta Trade PWA on your home screen</string>
             <key>PayloadDisplayName</key>
-            <string>IFC Trade Web Clip</string>
+            <string>AI Meta Trade Web Clip</string>
             <key>PayloadIdentifier</key>
-            <string>com.ifctrade.pwa.webclip</string>
+            <string>com.aimeta.pwa.webclip</string>
             <key>PayloadType</key>
             <string>com.apple.webClip.managed</string>
             <key>PayloadUUID</key>
@@ -29,13 +29,13 @@
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>URL</key>
-            <string>https://ifctrade.io</string>
+            <string>https://aimeta.trade</string>
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>IFC Trade Installation</string>
+    <string>AI Meta Trade Installation</string>
     <key>PayloadIdentifier</key>
-    <string>com.ifctrade.pwa.config</string>
+    <string>com.aimeta.pwa.config</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
     <key>PayloadType</key>

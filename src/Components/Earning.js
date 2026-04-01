@@ -41,13 +41,13 @@ export default function Earning() {
     const incomeList = [
         { title: "Trade Profit", path: "/trade_profit", price: member_dashboard?.roi, color: "#9f41ec" },
         { title: "Direct Partner Bonus", path: "/firstdeposit", price: member_dashboard?.direct, color: "#22c55e" },
-        { title: "Referral Level Bonus", path: "/everyDeposite", price: member_dashboard?.lev, color: "#3b82f6" },
+        // { title: "Referral Level Bonus", path: "/everyDeposite", price: member_dashboard?.lev, color: "#3b82f6" },
         { title: "Dividend Bonus", path: "/dividentBonus", price: member_dashboard?.tp_lev, color: "#facc15" },
         { title: "Community Trade Bonus", path: "/differential_income", price: member_dashboard?.rnk, color: "#ec4899" },
         { title: "Rank-Up Bonus", path: "/weekly", price: member_dashboard?.weekly, color: "#f97316" },
         { title: "Rank Reward", path: "/onetime", price: member_dashboard?.reward, color: "#14b8a6" },
-        { title: "Same Rank Bonus", path: "/same_rank", price: member_dashboard?.same_rank, color: "#a855f7" },
-        { title: "Partner Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444" }
+        // { title: "Same Rank Bonus", path: "/same_rank", price: member_dashboard?.same_rank, color: "#a855f7" },
+        // { title: "Partner Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444" }
     ];
 
 

@@ -94,7 +94,7 @@ export default function Sidebar() {
             src={customer}
             alt="customer"
             sx={{ cursor: "pointer" }}
-            onClick={() => window.open("https://t.me/ifcinvestment", "_blank")}
+            // onClick={() => window.open("https://t.me/ifcinvestment", "_blank")}
           ></Box>
         </ListItemButton>
       </Box>

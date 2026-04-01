@@ -71,6 +71,8 @@ export default function Transfer() {
         setLoading(false);
     }
 
+    
+
     const handleSubmit = () => {
         if (!walletType) {
             toast.error("Please select wallet");
@@ -80,6 +82,12 @@ export default function Transfer() {
             toast.error("Please enter valid amount");
             return;
         }
+
+
+    if (fk.values.inr_value < 5) {
+        toast.error("Minimum transfer amount is $5", {id:1});
+        return;
+    }
         Swal.fire({
             icon: "warning",
             title: "Are you sure?",
@@ -96,11 +104,6 @@ export default function Transfer() {
                 else if (walletType === "profit") ProfitWallet();
             }
         });
-    };
-
-    const handleHistoryClick = () => {
-        // Implement navigation or modal for transfer history
-        toast("Open transfer history");
     };
 
     return (
@@ -334,9 +337,9 @@ export default function Transfer() {
                         </Typography>
                         <Typography sx={{ fontSize: 13, mb: 1 }}>
                             2. After the first transfer, you can transfer as low as{" "}
-                            <span style={{ color: "#22c55e" }}>$1</span>.
+                            <span style={{ color: "#22c55e" }}>$5</span>.
                         </Typography>
-                        <Typography sx={{ fontSize: 13, fontWeight: 600, mt: 2, mb: 1 }}>
+                        {/* <Typography sx={{ fontSize: 13, fontWeight: 600, mt: 2, mb: 1 }}>
                             3. First Deposit Bonus Structure:
                         </Typography>
                         <Box sx={{ border: "1px solid #333", borderRadius: 1, overflow: "hidden" }}>
@@ -374,7 +377,7 @@ export default function Transfer() {
                                     <Typography sx={{ fontSize: 13, fontWeight: 500 }}>{row.bonus}</Typography>
                                 </Box>
                             ))}
-                        </Box>
+                        </Box> */}
                     </Box>
                 )}
 
@@ -384,7 +387,7 @@ export default function Transfer() {
                             Important Notice
                         </Typography>
                         <Typography sx={{ fontSize: 13 }}>
-                            1. You can transfer a minimum of $1 to the Trade Wallet and get compounding benefits.
+                            1. You can transfer a minimum of $5 to the Trade Wallet and get compounding benefits.
                         </Typography>
                     </Box>
                 )}

@@ -10,11 +10,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import Header2 from "./Layouts/Header2";
 
 const links = [
-    { name: "Telegram", icon: <FaTelegramPlane />, url: "https://t.me/ifctradeofficial" },
+    { name: "Telegram", icon: <FaTelegramPlane />, url: "#" },
     { name: "X", icon: <FaXTwitter />, url: "#" },
-    { name: "Instagram", icon: <FaInstagram />, url: "https://www.instagram.com/ifctradeofficial" },
+    { name: "Instagram", icon: <FaInstagram />, url: "#" },
     { name: "Facebook", icon: <FaFacebook />, url: "#" },
-    { name: "Youtube", icon: <FaYoutube />, url: "https://youtube.com/@ifctradeofficial" },
+    { name: "Youtube", icon: <FaYoutube />, url: "#" },
 ];
 
 export default function OfficialLinks() {

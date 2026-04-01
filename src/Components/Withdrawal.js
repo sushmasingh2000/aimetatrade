@@ -128,7 +128,7 @@ export default function Dashboard() {
               }}
             />
 
-            <FormControlLabel
+            {/* <FormControlLabel
               value="spot_wallet"
               label="Spot "
               control={
@@ -145,7 +145,7 @@ export default function Dashboard() {
                 color:
                   fk.values.wallet_type === "spot_wallet" ? "#fff" : "#ffffff",
               }}
-            />
+            /> */}
           </RadioGroup>
         </FormControl>
         <Box className="main_form" sx={{ px: 2, mt: 3 }}>

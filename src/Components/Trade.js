@@ -13,6 +13,7 @@ import moment from 'moment';
 import CustomCircularProgress from '../shared/loder/CustomCircularProgress';
 import { getFloatingValue } from '../utils/utilityFun';
 import { formatedDate } from '../utils/DateTime';
+import { CountdownTimer } from '../shared/Countdowntimer';
 
 
 export default function Trade() {
@@ -110,13 +111,13 @@ export default function Trade() {
                                     {showBalance
                                         ? `$${getFloatingValue(user?.tr03_topup_wallet)}`
                                         : "$ ****"}
-                                </> : 
+                                </> :
                                 <>
-                                 {showBalance
-                                    ? `$${getFloatingValue(member_dashboard?.roi)}`
-                                : "$ ****"}
+                                    {showBalance
+                                        ? `$${getFloatingValue(member_dashboard?.roi)}`
+                                        : "$ ****"}
                                 </>
-                                   }
+                            }
 
                             <Select
                                 value={currency}
@@ -248,7 +249,7 @@ export default function Trade() {
                                                             </Typography>
                                                         </Box>
                                                     </Box>
-
+                                                    <CountdownTimer startDate={item.tr09_created_at} />
                                                     {/* RIGHT SIDE */}
                                                     <Box sx={{ textAlign: "right" }}>
                                                         <Typography

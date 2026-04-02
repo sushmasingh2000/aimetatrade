@@ -45,9 +45,9 @@ export default function Earning() {
         { title: "Dividend Bonus", path: "/dividentBonus", price: member_dashboard?.tp_lev, color: "#facc15" },
         { title: "Community Trade Bonus", path: "/differential_income", price: member_dashboard?.rnk, color: "#ec4899" },
         { title: "Rank-Up Bonus", path: "/weekly", price: member_dashboard?.weekly, color: "#f97316" },
-        { title: "Rank Reward", path: "/onetime", price: member_dashboard?.reward, color: "#14b8a6" },
+        // { title: "Rank Reward", path: "/onetime", price: member_dashboard?.reward, color: "#14b8a6" },
         // { title: "Same Rank Bonus", path: "/same_rank", price: member_dashboard?.same_rank, color: "#a855f7" },
-        // { title: "Partner Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444" }
+        { title: "MT Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444" }
     ];
 
 

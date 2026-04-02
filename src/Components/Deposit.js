@@ -402,7 +402,7 @@ export default function Deposit() {
                     <Typography variant="h6">Disclaimer:</Typography>
 
                     <Typography sx={{ mt: 1 }}>
-                        Minimum Deposit is $1.
+                        Minimum Deposit is $5.
                     </Typography>
 
                     <Typography sx={{ mt: 1 }}>

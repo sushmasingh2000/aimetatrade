@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import Livechart from './Livechart';
 import { Link } from "react-router-dom";
-import Banner1 from "../assets/images/hero-slider/12.jpg";
-import Banner2 from "../assets/images/hero-slider/12.jpg";
-// import Banner3 from "../assets/images/hero-slider/3.png";
+import Banner1 from "../assets/images/hero-slider/ai meta.gif";
+import Banner2 from "../assets/images/hero-slider/AI META 02.gif";
+import Banner3 from "../assets/images/hero-slider/AI META 01.gif";
 // import Banner4 from "../assets/images/hero-slider/4.png";
 import withdrawal from "../assets/images/icons/withdrawal.png";
 import deposit from "../assets/images/icons/deposit.png";
@@ -317,10 +317,10 @@ export default function Dashboard() {
                             <SwiperSlide>
                                 <Box component="img" src={Banner2} alt="Banner2" sx={{ width: "100%", borderRadius: 2 }}></Box>
                             </SwiperSlide>
-                            {/* <SwiperSlide>
+                            <SwiperSlide>
                                 <Box component="img" src={Banner3} alt="Banner3" sx={{ width: "100%", borderRadius: 2 }}></Box>
                             </SwiperSlide>
-                            <SwiperSlide>
+                             {/*<SwiperSlide>
                                 <Box component="img" src={Banner4} alt="Banner4" sx={{ width: "100%", borderRadius: 2 }}></Box>
                             </SwiperSlide> */}
 

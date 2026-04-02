@@ -84,7 +84,7 @@ export default function Sidebar() {
         <Box
           component="img"
           src={logo1}
-          sx={{ width: "70px", cursor: "pointer" }}
+          sx={{ width: "40px", cursor: "pointer" }}
           onClick={() => window.location.reload()}
         />
 

@@ -149,12 +149,12 @@ const navStyle = {
   },
 
   "&.active": {
-    color: "#9f41ec",
+    color: "#41e0ec",
     backgroundColor: "transparent",   // ✅ no background
   },
 
   "&.active i": {
-    color: "#9f41ec",
+    color: "#41c4ec",
   },
 };
 

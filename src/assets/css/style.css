@@ -18,7 +18,7 @@ body {
 }
 
 :root {
-    --primary-color: #ad49ff;
+    --primary-color: linear-gradient(90deg, #04fcf8, #fa0ef5);
 }
 
 @keyframes flashUp {
@@ -71,7 +71,7 @@ footer .footer_main li a i {
 footer .footer_main li a .trade_icon {
     width: 60px;
     height: 60px;
-    background: #ad49ff;
+    background: linear-gradient(90deg, #04fcf8, #fa0ef5);;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -285,7 +285,7 @@ p {
     border-radius: 50%;
     font-size: 18px;
     color: #fff;
-    background: linear-gradient(180deg, #d096ff 0%, #8500f5 100%);
+    background: linear-gradient(180deg, #96fbff 0%, #f500c0 100%);
 }
 
 .chart_lsit button {
@@ -413,7 +413,7 @@ p {
 .main_header button {
     width: 35px;
     height: 35px;
-    background: #af43fc4a;
+    background: #43d7fc4a;
     padding: 0;
 }
 
@@ -810,7 +810,7 @@ p {
 }
 
 .main_tabs_vierview .neame_line button.Mui-selected {
-    color: #AD49FE !important;
+    color: linear-gradient(90deg, #04fcf8, #fa0ef5) !important;
 }
 
 .main_tabs_vierview .neame_line .MuiTabs-list {
@@ -818,7 +818,7 @@ p {
 }
 
 .main_tabs_vierview .neame_line .MuiTabs-indicator {
-    background-color: #AD49FE;
+    background-color: linear-gradient(90deg, #04fcf8, #fa0ef5);
     height: 1px;
 }
 
@@ -979,7 +979,7 @@ p {
 }
 
 .login_input .icon_login {
-    background: #841fd94a;
+    background: #1fbdd94a;
     width: 50px;
     height: 100%;
     position: absolute;
@@ -1000,7 +1000,7 @@ p {
 }
 
 .login_input_e .icon_login {
-    background: #841fd94a;
+    background: #1fd9ca4a;
     width: 50px;
     height: 100%;
     position: absolute;
@@ -1050,7 +1050,7 @@ p {
 }
 
 .forgot_pa a {
-    color: #ad49ff;
+    color: #04fcf8;
     font-size: 14px;
 }
 
@@ -1072,7 +1072,7 @@ p {
 }
 
 .claim_box {
-    border: 1px solid #7632aead;
+    border: 1px solid #32aea8ad;
     text-align: center;
     padding: 13px;
     border-radius: 10px;
@@ -1092,7 +1092,7 @@ p {
 .claim_box button {
     width: 100%;
     color: #fff;
-    background: #9f41ec;
+    background: linear-gradient(90deg, #04fcf8, #fa0ef5);
     border: 0;
     padding: 5px 12px;
     border-radius: 7px;

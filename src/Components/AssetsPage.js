@@ -67,7 +67,7 @@ export default function Assetstabs() {
             py: 0,
           },
           "& .Mui-selected": {
-            color: "#ad49ff !important",
+            color: "#4feef9 !important",
           },
           "& .MuiTabs-indicator": {
             height: 2,

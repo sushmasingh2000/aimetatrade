@@ -141,26 +141,26 @@ export default function Trade() {
                         <List sx={{ marginTop: '5px !important' }}>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Deposit">
-                                    <Box component='img' src={deposit} alt="deposit"></Box>
+                                    <Box component='img' src={deposit}  sx={{ filter: "hue-rotate(45deg)" }} alt="deposit"></Box>
                                     <Typography>Deposit</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Withdrawal">
-                                    <Box component='img' src={withdrawal} alt="withdrawal"></Box>
+                                    <Box component='img' src={withdrawal}  sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal"></Box>
                                     <Typography>Withdrawal</Typography>
                                 </ListItemButton>
                             </ListItem>
 
                             <ListItem>
                                 <ListItemButton component={Link} to="/Transfer">
-                                    <Box component='img' src={transfer} alt="transfer"></Box>
+                                    <Box component='img' src={transfer} sx={{ filter: "hue-rotate(45deg)" }} alt="transfer"></Box>
                                     <Typography>Transfer</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/More">
-                                    <Box component='img' src={convert} alt="convert"></Box>
+                                    <Box component='img' src={convert}  sx={{ filter: "hue-rotate(45deg)" }} alt="convert"></Box>
                                     <Typography>More</Typography>
                                 </ListItemButton>
                             </ListItem>
@@ -189,7 +189,7 @@ export default function Trade() {
                                 color: "#cfd8ff !important",
                                 transition: "0.3s",
                                 "&.Mui-selected": {
-                                    background: "linear-gradient(90deg,#9f41ec,#7873f5)",
+                                    background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                                     color: "#fff !important",
                                 },
                             }}
@@ -204,7 +204,7 @@ export default function Trade() {
                                 color: "#cfd8ff !important",
                                 transition: "0.3s",
                                 "&.Mui-selected": {
-                                    background: "linear-gradient(90deg,#9f41ec,#7873f5)",
+                                    background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                                     color: "#fff !important",
                                 },
                             }}

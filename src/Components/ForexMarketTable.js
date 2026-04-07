@@ -334,7 +334,7 @@ export default function ForexMarketTable() {
                             cursor: "pointer",
                             fontSize: 13,
                             fontWeight: 500,
-                            color: tab === i ? "#ad49ff" : "#6b7280",
+                            color: tab === i ? "#49eaff" : "#6b7280",
                         }}
                     >
                         {label}

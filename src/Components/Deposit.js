@@ -227,10 +227,10 @@ export default function Deposit() {
                             fontWeight: 500,
                         },
                         "& .MuiTab-root.Mui-selected": {
-                            color: "#ad49ff",
+                            color: "#49f9ff",
                         },
                         "& .MuiTabs-indicator": {
-                            backgroundColor: "#ad49ff",
+                            backgroundColor: "#49ffff",
                         },
                     }}>
                         <Tab label="BEP20" />
@@ -286,13 +286,13 @@ export default function Deposit() {
                                                     borderColor: "#fff",
                                                 },
                                                 "&:hover fieldset": {
-                                                    borderColor: "#ad49ff",
+                                                    borderColor: "#49f3ff",
                                                 },
                                                 "&.Mui-focused": {
                                                     backgroundColor: "transparent",  // focus pe bhi transparent
                                                 },
                                                 "&.Mui-focused fieldset": {
-                                                    borderColor: "#ad49ff",
+                                                    borderColor: "#49f3ff",
                                                 },
                                             },
 
@@ -337,7 +337,7 @@ export default function Deposit() {
                                                 left: "50%",
                                                 transform: "translate(-50%, -50%)",
                                                 zIndex: 2,
-                                                background: "#ad49ff !important",
+                                                background: "linear-gradient(90deg, #04fcf8, #fa0ef5) !important",
                                                 color: "white !important"
                                             }}
                                             onClick={handleGenerateQR}
@@ -352,7 +352,7 @@ export default function Deposit() {
                                     {qrGenerated && (
                                         <Box>
                                             <Box component="img" src={topup_qr?.qr} alt="scanner"></Box>
-                                            <Button className="qr_code" onClick={() => {
+                                            <Button style={{color: "white"}} className="qr_code" onClick={() => {
                                                 functionTOCopy(
                                                     `${topup_qr?.address}`
                                                 );

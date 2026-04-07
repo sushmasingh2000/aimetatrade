@@ -71,7 +71,7 @@ function FirstDeposit() {
 
     <>
       <Header2
-        title="Direct Partner Bonus"
+        title="Direct  Bonus"
       />
 
       <CustomCircularProgress isLoading={loading} />
@@ -143,10 +143,10 @@ function FirstDeposit() {
             }}
           >
             <Typography sx={{ fontSize: 16, fontWeight: 600 }}>
-              No Direct Partner Bonus  Found
+              No Direct  Bonus  Found
             </Typography>
             <Typography sx={{ fontSize: 13, color: '#aaa', mt: 1 }}>
-              You haven’t made any Direct Partner Bonus  yet.
+              You haven’t made any Direct  Bonus  yet.
             </Typography>
           </Box>
         )}

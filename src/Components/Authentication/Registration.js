@@ -178,11 +178,11 @@ function Registration() {
     },
 
     "&:hover fieldset": {
-      borderColor: "#ad49ff",
+      borderColor: "#49f3ff",
     },
 
     "&.Mui-focused fieldset": {
-      borderColor: "#ad49ff",
+      borderColor: "#49ffff",
     },
   };
 
@@ -237,7 +237,7 @@ function Registration() {
             <>
               <Box className="login_input">
                 <Box className="icon_login">
-                  <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-email"></use></svg>
+                  <svg width="25" height="25" fill={'#49fff0'}><use xlinkHref="#icon-email"></use></svg>
                 </Box>
                 <FormControl fullWidth>
                   <TextField
@@ -254,8 +254,8 @@ function Registration() {
                         borderRadius: "5px",
                         backgroundColor: "transparent",
                         "& fieldset": { borderColor: "#fff" },
-                        "&:hover fieldset": { borderColor: "#ad49ff" },
-                        "&.Mui-focused fieldset": { borderColor: "#ad49ff" },
+                        "&:hover fieldset": { borderColor: "#49c5ff" },
+                        "&.Mui-focused fieldset": { borderColor: "#49e4ff" },
                       },
                       "& input": { color: "#fff", backgroundColor: "transparent" },
                       "& input:-webkit-autofill": {
@@ -280,7 +280,7 @@ function Registration() {
                 <Typography sx={{ fontSize: '12px', color: '#e3efff', mt: 2 }}>We Will Send a 6 Digit OTP to this E-mail Address.</Typography>
                 <Typography sx={{ fontSize: '12px', color: '#e3efff', mt: 1 }}>Please Enter a Valid E-mail Address to Receive OTP.</Typography>
                 <Button onClick={emailOtp} sx={{
-                  padding: '6px', width: '100%', background: 'linear-gradient(90deg, #ad49ff, #7d18d2)',
+                  padding: '6px', width: '100%', background: 'linear-gradient(90deg, #04fcf8, #fa0ef5)',
                   color: '#fff', borderRadius: '20px', mb: 2, mt: 5, fontSize: '19px', fontWeight: '700', '&:hover': { background: 'linear-gradient(90deg, #ad49ff, #7d18d2)' },
                 }}>Send OTP</Button>
               </Box>
@@ -442,14 +442,14 @@ function Registration() {
                 sx={{
                   padding: '6px',
                   width: '100%',
-                  background: 'linear-gradient(90deg, #ad49ff, #7d18d2)',
+                  background: 'linear-gradient(90deg, #04fcf8, #fa0ef5)',
                   color: '#fff',
                   borderRadius: '20px',
                   mb: 2,
                   fontSize: '19px',
                   mt: 5,
                   fontWeight: '700',
-                  '&:hover': { background: 'linear-gradient(90deg, #ad49ff, #7d18d2)' },
+                  '&:hover': { background: 'linear-gradient(90deg, #04fcf8, #fa0ef5)' },
                 }}
               >
                 Verify OTP
@@ -462,7 +462,7 @@ function Registration() {
               <Box component="form" onSubmit={fk.handleSubmit}>
                 <Box className="login_input" sx={{ mt: 2 }}>
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-user"></use></svg>
+                    <svg width="25" height="25" fill={'#49ffff'}><use xlinkHref="#icon-user"></use></svg>
                   </Box>
                   <FormControl fullWidth >
                     <TextField
@@ -476,13 +476,13 @@ function Registration() {
                             borderColor: "#fff",
                           },
                           "&:hover fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49ffff",
                           },
                           "&.Mui-focused": {
                             backgroundColor: "transparent",  // focus pe bhi transparent
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49cbff",
                           },
                         },
 
@@ -504,7 +504,7 @@ function Registration() {
                 </Box>
                 <Box className="login_input" sx={{ mt: 2 }}>
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-email"></use></svg>
+                    <svg width="25" height="25" fill={'#49f9ff'}><use xlinkHref="#icon-email"></use></svg>
                   </Box>
                   <FormControl fullWidth>
                     <TextField id="username" name="username" placeholder='Please Input Your Email' value={fk.values.email} label=""
@@ -517,13 +517,13 @@ function Registration() {
                             borderColor: "#fff",
                           },
                           "&:hover fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49ffff",
                           },
                           "&.Mui-focused": {
                             backgroundColor: "transparent",  // focus pe bhi transparent
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49fff0",
                           },
                         },
 
@@ -544,7 +544,7 @@ function Registration() {
                 </Box>
                 <Box sx={{ mt: 2 }} className="login_input login_input_2" >
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-phone"></use></svg>
+                    <svg width="25" height="25" fill={'#49c5ff'}><use xlinkHref="#icon-phone"></use></svg>
                   </Box>
                   <FormControl fullWidth>
                     <TextField
@@ -581,7 +581,7 @@ function Registration() {
                                   sx: {
                                     bgcolor: "#1e1e1e",
                                     color: "#fff",
-                                    border: "1px solid #6a1b9a",
+                                    border: "1px solid #1b9a89",
                                     maxHeight: 250,
                                     paddingLeft: "2px",
                                   },
@@ -608,7 +608,7 @@ function Registration() {
                                         ? "1px solid rgba(255,255,255,0.1)"
                                         : "none",
                                     "&:hover": { bgcolor: "#2a2a2a" },
-                                    "&.Mui-selected": { bgcolor: "#6a1b9a !important", color: "#fff" },
+                                    "&.Mui-selected": { bgcolor: "#1b879a !important", color: "#fff" },
                                   }}
                                 >
                                   {country} +{code}
@@ -629,13 +629,13 @@ function Registration() {
                             borderColor: "#fff",
                           },
                           "&:hover fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49cbff",
                           },
                           "&.Mui-focused": {
                             backgroundColor: "transparent",  // focus pe bhi transparent
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49ffff",
                           },
                         },
 
@@ -707,7 +707,7 @@ function Registration() {
               </Box> */}
                 <Box className="login_input" sx={{ mt: 2 }}>
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-user"></use></svg>
+                    <svg width="25" height="25" fill={'#49ffe7'}><use xlinkHref="#icon-user"></use></svg>
                   </Box>
                   <FormControl fullWidth >
                     <TextField
@@ -721,13 +721,13 @@ function Registration() {
                             borderColor: "#fff",
                           },
                           "&:hover fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49f9ff",
                           },
                           "&.Mui-focused": {
                             backgroundColor: "transparent",  // focus pe bhi transparent
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#ad49ff",
+                            borderColor: "#49eaff",
                           },
                         },
 
@@ -748,7 +748,7 @@ function Registration() {
                 </Box>
                 <Box className="login_input_e" sx={{ mt: 2 }}>
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-editPswIcon"></use></svg>
+                    <svg width="25" height="25" fill={'#49dbff'}><use xlinkHref="#icon-editPswIcon"></use></svg>
                   </Box>
                   <FormControl fullWidth className='passowrld'
                     sx={{
@@ -759,13 +759,13 @@ function Registration() {
                           borderColor: "#fff",
                         },
                         "&:hover fieldset": {
-                          borderColor: "#ad49ff",
+                          borderColor: "#49cbff",
                         },
                         "&.Mui-focused": {
                           backgroundColor: "transparent",  // focus pe bhi transparent
                         },
                         "&.Mui-focused fieldset": {
-                          borderColor: "#ad49ff",
+                          borderColor: "#49eaff",
                         },
                       },
 
@@ -801,17 +801,17 @@ function Registration() {
                 </Box>
                 <Box className="login_input_e" sx={{ mt: 2 }}>
                   <Box className="icon_login">
-                    <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-editPswIcon"></use></svg>
+                    <svg width="25" height="25" fill={'#49fff6'}><use xlinkHref="#icon-editPswIcon"></use></svg>
                   </Box>
                   <FormControl fullWidth className='passowrld' sx={{
                     "& .MuiOutlinedInput-root": {
                       borderRadius: "5px",
                       borderColor: "#fff",
                       "&:hover fieldset": {
-                        borderColor: "#ad49ff", // hover color
+                        borderColor: "#49ffd8", // hover color
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "#ad49ff", // focus color
+                        borderColor: "#49fff0", // focus color
                       },
                     },
 
@@ -848,7 +848,7 @@ function Registration() {
                     MozUserSelect: "none",
                     msUserSelect: "none",
                   }}>  {captcha}</Typography> */}
-                  <Refresh sx={{ color: "#ad49ff", cursor: "pointer", mt: 2 }} onClick={generateCaptcha} />
+                  <Refresh sx={{ color: "#49f3ff", cursor: "pointer", mt: 2 }} onClick={generateCaptcha} />
 
 
                 </Box>
@@ -864,10 +864,10 @@ function Registration() {
                           borderRadius: "5px",
                           borderColor: "#fff",
                           "&:hover fieldset": {
-                            borderColor: "#ad49ff", // hover color
+                            borderColor: "#49eaff", // hover color
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#ad49ff", // focus color
+                            borderColor: "#49ffff", // focus color
                           },
                         },
 
@@ -885,11 +885,11 @@ function Registration() {
             </Box> */}
               <Box sx={{ width: '100%', margin: 'auto', mt: 3 }}>
                 <Button onClick={() => fk.handleSubmit()} sx={{
-                  padding: '6px', width: '100%', background: 'linear-gradient(90deg, #ad49ff, #7d18d2)',
-                  color: '#fff', borderRadius: '20px', mb: 2, fontSize: '16px', fontWeight: '700', '&:hover': { background: 'linear-gradient(90deg, #ad49ff, #7d18d2)' },
+                  padding: '6px', width: '100%', background: 'linear-gradient(90deg, #04fcf8, #fa0ef5)',
+                  color: '#fff', borderRadius: '20px', mb: 2, fontSize: '16px', fontWeight: '700', '&:hover': { background: 'linear-gradient(90deg, #04fcf8, #fa0ef5)' },
                 }}>Register</Button>
                 <NavLink to="/">
-                  <Button sx={{ padding: '3px 15px !important', borderColor: '#ad49ff', color: '#ad49ff', width: '100%', borderRadius: '20px', fontSize: '16px', fontWeight: '700', '&:hover': { color: '#fff', borderColor: '#fff', } }}
+                  <Button sx={{ padding: '3px 15px !important', borderColor: '#49cbff', color: '#49f9ff', width: '100%', borderRadius: '20px', fontSize: '16px', fontWeight: '700', '&:hover': { color: '#fff', borderColor: '#fff', } }}
                     variant="outlined">Log in</Button>
                 </NavLink>
               </Box>

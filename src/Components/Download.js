@@ -50,7 +50,7 @@ export default function Download() {
 .download_ios  {
     width: 100%;
     padding: 10px 10px !important;
-    background: #ad49ff;
+    background: linear-gradient(90deg, #04fcf8, #fa0ef5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,10 +70,10 @@ export default function Download() {
     align-items: center;
     text-decoration: none;
     border-radius: 40px;
-    color: #ad49ff;
+    color: linear-gradient(90deg, #04fcf8, #fa0ef5);;
     font-size: 15px;
     gap: 9px;
-    border: 1px solid #ad49ff;
+    border: 1px solid #49b6ff;
     margin-top: 20px;
 }
  
@@ -83,13 +83,15 @@ export default function Download() {
                
                 `}
             </style>
-            <Header2  title="App Download"/>
+            <Header2 title="App Download" />
             <Container sx={{ px: '30px !important' }}>
                 <Box className="download_img">
                     <img src={download} alt="download" />
                 </Box>
                 <Box className="logo_download">
-                    <Link to="/"><img src={logo} alt="logo" /></Link>
+                    <Link to="/">
+                        <img src={logo} alt="logo" style={{ width: "50px" }} />
+                    </Link>
                 </Box>
                 {true && (
                     <Box className="download_ios" onClick={handleIosDownload}>
@@ -97,12 +99,13 @@ export default function Download() {
                     </Box>
                 )}
                 {deferredPrompt ?
-                    <Box sx={{cursor: "pointer"}} className="download_and" onClick={installApp}>
+                    <Box sx={{ cursor: "pointer" , color: "#fff !important" }}  className="download_and" onClick={installApp}>
                         <i class="ri-android-fill"></i> Android Download
                     </Box> :
-                    <Box className="download_and" onClick={installApp}>
+                    <Box className="download_and" sx={{ color: "#fff !important" }}
+                        onClick={installApp}>
                         <i class="ri-android-fill"></i> Android Download
-                    </Box> 
+                    </Box>
                 }
             </Container>
         </>

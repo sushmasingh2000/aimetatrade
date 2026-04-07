@@ -70,7 +70,7 @@ function Partnmer() {
 
     <>
       <Header2
-        title="Partner Rank Bonus"
+        title="MT Rank Bonus"
       />
 
       <CustomCircularProgress isLoading={loading} />
@@ -142,10 +142,10 @@ function Partnmer() {
             }}
           >
             <Typography sx={{ fontSize: 16, fontWeight: 600 }}>
-              No  Partner Rank Bonus  Found
+              No  MT Rank Bonus  Found
             </Typography>
             <Typography sx={{ fontSize: 13, color: '#aaa', mt: 1 }}>
-              You haven’t made any Partner Rank Bonus  yet.
+              You haven’t made any MT Rank Bonus  yet.
             </Typography>
           </Box>
         )}

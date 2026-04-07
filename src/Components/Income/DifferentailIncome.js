@@ -70,7 +70,7 @@ function DefferentailIncome() {
 
     <>
       <Header2 
-       title="Community Trade Bonus "
+       title="Community  Bonus "
          />
 
       <CustomCircularProgress isLoading={loading} />
@@ -142,10 +142,10 @@ function DefferentailIncome() {
                 }}
               >
                 <Typography sx={{ fontSize: 16, fontWeight: 600 }}>
-                  No Community Trade Bonus  Found
+                  No Community  Bonus  Found
                 </Typography>
                 <Typography sx={{ fontSize: 13, color: '#aaa', mt: 1 }}>
-                  You haven’t made any Community Trade Bonus  yet.
+                  You haven’t made any Community  Bonus  yet.
                 </Typography>
               </Box>
             )}

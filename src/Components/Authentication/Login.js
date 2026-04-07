@@ -145,7 +145,7 @@ function Login() {
                     <Box component="form" onSubmit={fk.handleSubmit}>
                         <Box className="login_input">
                             <Box className="icon_login">
-                                <svg width="25" height="25" fill="#ad49ff">
+                                <svg width="25" height="25" fill="#49f9ff">
                                     <use xlinkHref="#icon-email" />
                                 </svg>
                             </Box>
@@ -158,13 +158,13 @@ function Login() {
                                             borderColor: "#fff",
                                         },
                                         "&:hover fieldset": {
-                                            borderColor: "#ad49ff",
+                                            borderColor: "#49eaff",
                                         },
                                         "&.Mui-focused": {
                                             backgroundColor: "transparent",  // focus pe bhi transparent
                                         },
                                         "&.Mui-focused fieldset": {
-                                            borderColor: "#ad49ff",
+                                            borderColor: "#49c5ff",
                                         },
                                     },
 
@@ -184,7 +184,7 @@ function Login() {
                         </Box>
                         <Box className="login_input_e" sx={{ mt: 2 }}>
                             <Box className="icon_login">
-                                <svg width="25" height="25" fill="#ad49ff">
+                                <svg width="25" height="25" fill="#49ffff">
                                     <use xlinkHref="#icon-editPswIcon" />
                                 </svg>
                             </Box>
@@ -197,13 +197,13 @@ function Login() {
                                             borderColor: "#fff",
                                         },
                                         "&:hover fieldset": {
-                                            borderColor: "#ad49ff",
+                                            borderColor: "#49f9ff",
                                         },
                                         "&.Mui-focused": {
                                             backgroundColor: "transparent",  // focus pe bhi transparent
                                         },
                                         "&.Mui-focused fieldset": {
-                                            borderColor: "#ad49ff",
+                                            borderColor: "#49d5ff",
                                         },
                                     },
 
@@ -274,7 +274,7 @@ function Login() {
                                         MozUserSelect: "none",
                                         msUserSelect: "none",
                                     }}>  {captcha}</Typography> */}
-                                    <Refresh sx={{ color: "#ad49ff", cursor: "pointer", mt: 2 }} onClick={generateCaptcha} />
+                                    <Refresh sx={{ color: "#49fff6", cursor: "pointer", mt: 2 }} onClick={generateCaptcha} />
                                 </Box>
                             </Box>
 
@@ -290,10 +290,10 @@ function Login() {
                                             borderRadius: "5px",
                                             borderColor: "#fff",
                                             "&:hover fieldset": {
-                                                borderColor: "#ad49ff", // hover color
+                                                borderColor: "#49ffff", // hover color
                                             },
                                             "&.Mui-focused fieldset": {
-                                                borderColor: "#ad49ff", // focus color
+                                                borderColor: "#49fff0", // focus color
                                             },
                                         },
 
@@ -306,7 +306,7 @@ function Login() {
 
                         <Box className="check_nput" sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 2 }}>
                             <FormGroup >
-                                <Checkbox checkedColor="#ad49ff" style={{ color: "#fff" }}>
+                                <Checkbox checkedColor="#49c5ff" style={{ color: "#fff" }}>
                                     <span style={{ color: "white" }} >Remember my password</span>
                                 </Checkbox>
                             </FormGroup>
@@ -323,7 +323,7 @@ function Login() {
                                 sx={{
                                     width: "100%",
                                     height: 44,
-                                    background: "linear-gradient(90deg,#ad49ff,#7d18d2)",
+                                    background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                                     color: "#fff",
                                     borderRadius: "20px",
                                     fontSize: "16px",
@@ -340,8 +340,8 @@ function Login() {
                                         mt: 2,
                                         width: "100%",
                                         height: 44,
-                                        borderColor: "#ad49ff",
-                                        color: "#ad49ff",
+                                        borderColor: "#49f3ff",
+                                        color: "#49dbff",
                                         borderRadius: "20px",
                                         fontSize: "16px",
                                         fontWeight: 700,

@@ -189,25 +189,25 @@ export default function Overview() {
 
                         <ListItem>
                             <ListItemButton component={Link} to="/Deposit">
-                                <Box component='img' src={deposit} alt="deposit"></Box>
+                                <Box component='img' src={deposit}  sx={{ filter: "hue-rotate(45deg)" }} alt="deposit"></Box>
                                 <Typography>Deposit</Typography>
                             </ListItemButton>
                         </ListItem>
                         <ListItem>
                             <ListItemButton component={Link} to="/Withdrawal">
-                                <Box component='img' src={withdrawal} alt="withdrawal"></Box>
+                                <Box component='img' src={withdrawal}  sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal"></Box>
                                 <Typography>Withdrawal</Typography>
                             </ListItemButton>
                         </ListItem>
                         <ListItem>
                             <ListItemButton component={Link} to="/Transfer">
-                                <Box component='img' src={transfer} alt="transfer"></Box>
+                                <Box component='img' src={transfer}  sx={{ filter: "hue-rotate(45deg)" }} alt="transfer"></Box>
                                 <Typography>Transfer</Typography>
                             </ListItemButton>
                         </ListItem>
                         <ListItem>
                             <ListItemButton component={Link} to="/More">
-                                <Box component='img' src={more} alt="more"></Box>
+                                <Box component='img' src={more}  sx={{ filter: "hue-rotate(45deg)" }} alt="more"></Box>
                                 <Typography>More</Typography>
                             </ListItemButton>
                         </ListItem>

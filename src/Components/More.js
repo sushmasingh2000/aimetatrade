@@ -117,9 +117,9 @@ export default function More() {
               <ListItemButton
                 component={Link}
                 sx={{ cursor: "pointer" }}
-                // onClick={() =>
-                //   window.open("https://t.me/ifcinvestment", "_blank")
-                // }
+                onClick={() =>
+                  window.open("https://t.me/AiMetaTrade", "_blank")
+                }
               >
                 <Box component="img" src={contactus} alt="contactus"></Box>
                 <Typography>Contact Us</Typography>

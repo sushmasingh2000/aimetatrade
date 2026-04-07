@@ -27,53 +27,53 @@ import ForexTicker from './ForexTicker';
 const TICKER_SYMBOLS = ["BTCUSDT", "ETHUSDT", "BNBUSDT"];
 
 const COIN_LOGO = (baseSymbol) => {
-  const symKey = `${baseSymbol.toUpperCase()}USDT`;
-  const id = SYMBOL_TO_ID[symKey];
+    const symKey = `${baseSymbol.toUpperCase()}USDT`;
+    const id = SYMBOL_TO_ID[symKey];
 
-  if (id) {
-    return `https://assets.coincap.io/assets/icons/${id}@2x.png`;
-  }
-  return `https://cryptoicons.org/api/color/${baseSymbol.toLowerCase()}/64`;
+    if (id) {
+        return `https://assets.coincap.io/assets/icons/${id}@2x.png`;
+    }
+    return `https://cryptoicons.org/api/color/${baseSymbol.toLowerCase()}/64`;
 };
 
 function CoinAvatar({ symbol }) {
-  const [failed, setFailed] = useState(false);
+    const [failed, setFailed] = useState(false);
 
-  if (failed) {
+    if (failed) {
+        return (
+            <div
+                style={{
+                    width: 20,
+                    height: 20,
+                    borderRadius: "50%",
+                    backgroundColor: "#1d4ed8",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    fontWeight: "bold",
+                    fontSize: 14,
+                }}
+            >
+                {symbol[0]}
+            </div>
+        );
+    }
+
     return (
-      <div
-        style={{
-          width: 20,
-          height: 20,
-          borderRadius: "50%",
-          backgroundColor: "#1d4ed8",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "#fff",
-          fontWeight: "bold",
-          fontSize: 14,
-        }}
-      >
-        {symbol[0]}
-      </div>
+        <img
+            src={COIN_LOGO(symbol)}
+            alt={symbol}
+            onError={() => setFailed(true)}
+            style={{
+                width: 20,
+                height: 20,
+                borderRadius: "50%",
+                objectFit: "contain",
+                backgroundColor: "#1a2030",
+            }}
+        />
     );
-  }
-
-  return (
-    <img
-      src={COIN_LOGO(symbol)}
-      alt={symbol}
-      onError={() => setFailed(true)}
-      style={{
-        width: 20,
-        height: 20,
-        borderRadius: "50%",
-        objectFit: "contain",
-        backgroundColor: "#1a2030",
-      }}
-    />
-  );
 }
 
 // ── Mini sparkline ─────────────────────────────────────────────────────────────
@@ -136,19 +136,19 @@ function TickerSparkline({ history, positive }) {
 }
 
 function useIsNarrow(breakpoint = 350) {
-  const [isNarrow, setIsNarrow] = useState(
-    typeof window !== "undefined" ? window.innerWidth < breakpoint : false
-  );
+    const [isNarrow, setIsNarrow] = useState(
+        typeof window !== "undefined" ? window.innerWidth < breakpoint : false
+    );
 
-  useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
-    const handler = (e) => setIsNarrow(e.matches);
-    setIsNarrow(mq.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, [breakpoint]);
+    useEffect(() => {
+        const mq = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
+        const handler = (e) => setIsNarrow(e.matches);
+        setIsNarrow(mq.matches);
+        mq.addEventListener("change", handler);
+        return () => mq.removeEventListener("change", handler);
+    }, [breakpoint]);
 
-  return isNarrow;
+    return isNarrow;
 }
 
 function TickerCard({ coin }) {
@@ -320,14 +320,14 @@ export default function Dashboard() {
                             <SwiperSlide>
                                 <Box component="img" src={Banner3} alt="Banner3" sx={{ width: "100%", borderRadius: 2 }}></Box>
                             </SwiperSlide>
-                             {/*<SwiperSlide>
+                            {/*<SwiperSlide>
                                 <Box component="img" src={Banner4} alt="Banner4" sx={{ width: "100%", borderRadius: 2 }}></Box>
                             </SwiperSlide> */}
 
                         </Swiper>
                     </Box>
-                    
-                
+
+
                     <Box className="news_box">
                         <List>
                             <ListItem className="news_text">
@@ -336,7 +336,7 @@ export default function Dashboard() {
                                     <marquee><Typography sx={{ fontSize: "12px !important" }}><span>
                                         {/* {member_dashboard?.m00_comment} */}
                                         Welcome to AI Meta Trade! Unlock Your Trading Potential – Start Your Profitable Journey to Financial Freedom Now!
-                                        </span></Typography></marquee>
+                                    </span></Typography></marquee>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
@@ -352,31 +352,31 @@ export default function Dashboard() {
                             <TickerCard key={sym} coin={coins[sym]} />
                         ))}
                     </div>
-                          {/* <ForexTicker /> */}
+                    {/* <ForexTicker /> */}
                     <Box className="main_btne">
                         <List>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Deposit">
-                                    <Box component='img' src={deposit} alt="deposit"></Box>
+                                    <Box component='img' src={deposit} sx={{ filter: "hue-rotate(45deg)" }} alt="deposit"></Box>
                                     <Typography>Deposit</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Withdrawal">
-                                    <Box component='img' src={withdrawal} alt="withdrawal"></Box>
+                                    <Box component='img' src={withdrawal}  sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal"></Box>
                                     <Typography>Withdrawal</Typography>
                                 </ListItemButton>
                             </ListItem>
 
                             <ListItem>
                                 <ListItemButton component={Link} to="/Transfer">
-                                    <Box component='img' src={transfer} alt="transfer"></Box>
+                                    <Box component='img' src={transfer}  sx={{ filter: "hue-rotate(45deg)" }} alt="transfer"></Box>
                                     <Typography>Transfer</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/More">
-                                    <Box component='img' src={more} alt="more"></Box>
+                                    <Box component='img' src={more}  sx={{ filter: "hue-rotate(45deg)" }} alt="more"></Box>
                                     <Typography>More</Typography>
                                 </ListItemButton>
                             </ListItem>
@@ -419,7 +419,7 @@ export default function Dashboard() {
                                 color: "#cfd8ff",
                                 transition: "0.3s",
                                 "&.Mui-selected": {
-                                    background: "linear-gradient(90deg,#9f41ec,#7873f5)",
+                                    background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                                     color: "#fff",
                                 },
                             }}
@@ -436,7 +436,7 @@ export default function Dashboard() {
                                 color: "#cfd8ff",
                                 transition: "0.3s",
                                 "&.Mui-selected": {
-                                    background: "linear-gradient(90deg,#9f41ec,#7873f5)",
+                                    background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                                     color: "#fff",
                                 },
                             }}

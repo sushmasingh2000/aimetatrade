@@ -39,15 +39,15 @@ export default function Earning() {
     const member_dashboard = dashboard_data?.data?.result || {};
 
     const incomeList = [
-        { title: "Trade Profit", path: "/trade_profit", price: member_dashboard?.roi, color: "#9f41ec" },
-        { title: "Direct Partner Bonus", path: "/firstdeposit", price: member_dashboard?.direct, color: "#22c55e" },
+        { title: "Daily Trade Bonus", path: "/trade_profit", price: member_dashboard?.roi, color: "#9f41ec !important" },
+        { title: "Direct Bonus ", path: "/firstdeposit", price: member_dashboard?.direct, color: "#22c55e !important" },
         // { title: "Referral Level Bonus", path: "/everyDeposite", price: member_dashboard?.lev, color: "#3b82f6" },
-        { title: "Dividend Bonus", path: "/dividentBonus", price: member_dashboard?.tp_lev, color: "#facc15" },
-        { title: "Community Trade Bonus", path: "/differential_income", price: member_dashboard?.rnk, color: "#ec4899" },
-        { title: "Rank-Up Bonus", path: "/weekly", price: member_dashboard?.weekly, color: "#f97316" },
-        // { title: "Rank Reward", path: "/onetime", price: member_dashboard?.reward, color: "#14b8a6" },
+        { title: "Dividend Bonus", path: "/dividentBonus", price: member_dashboard?.tp_lev, color: "#facc15 !important" },
+        { title: "Community Bonus ", path: "/differential_income", price: member_dashboard?.rnk, color: "#ec4899 !important" },
+        // { title: "Rank-Up Bonus", path: "/weekly", price: member_dashboard?.weekly, color: "#f97316 " },
+        { title: "Rank Reward", path: "/onetime", price: member_dashboard?.reward, color: "#14b8a6 !important" },
         // { title: "Same Rank Bonus", path: "/same_rank", price: member_dashboard?.same_rank, color: "#a855f7" },
-        { title: "MT Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444" }
+        { title: "MT Rank Bonus", path: "/partner", price: member_dashboard?.partner_rank, color: "#ef4444 !important" }
     ];
 
 
@@ -119,28 +119,28 @@ export default function Earning() {
                     <List sx={{ marginTop: "5px !important" }}>
                         <ListItem disablePadding>
                             <ListItemButton component={Link} to="/Deposit">
-                                <Box component="img" src={deposit} alt="deposit" />
+                                <Box component="img" src={deposit} sx={{ filter: "hue-rotate(45deg)" }} alt="deposit" />
                                 <Typography ml={1}>Deposit</Typography>
                             </ListItemButton>
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemButton component={Link} to="/Withdrawal">
-                                <Box component="img" src={withdrawal} alt="withdrawal" />
+                                <Box component="img" src={withdrawal} sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal" />
                                 <Typography ml={1}>Withdrawal</Typography>
                             </ListItemButton>
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemButton component={Link} to="/Transfer">
-                                <Box component="img" src={transfer} alt="transfer" />
+                                <Box component="img" src={transfer} sx={{ filter: "hue-rotate(45deg)" }} alt="transfer" />
                                 <Typography ml={1}>Transfer</Typography>
                             </ListItemButton>
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemButton component={Link} to="/More">
-                                <Box component="img" src={convert} alt="convert" />
+                                <Box component="img" src={convert} sx={{ filter: "hue-rotate(45deg)" }} alt="convert" />
                                 <Typography ml={1}>More</Typography>
                             </ListItemButton>
                         </ListItem>
@@ -161,7 +161,7 @@ export default function Earning() {
                     History
                 </Typography>
 
-                <Box
+                {/* <Box
                     sx={{
                         display: "flex",
                         flexDirection: "column",
@@ -187,7 +187,6 @@ export default function Earning() {
                                 }
                             }}
                         >
-                            {/* Left Section */}
                             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                                 <Box
                                     sx={{
@@ -208,7 +207,6 @@ export default function Earning() {
                                 </Typography>
                             </Box>
 
-                            {/* Right Section */}
                             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                                 <Typography
                                     sx={{
@@ -222,6 +220,68 @@ export default function Earning() {
                                 <ArrowForwardIosIcon
                                     sx={{ fontSize: 14, color: "#888" }}
                                 />
+                            </Box>
+                        </Box>
+                    ))}
+                </Box> */}
+
+                <Box
+                    sx={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(2, 1fr)",
+                        columnGap: 2,
+                        rowGap: 3 // thoda kam gap
+                    }}
+                >
+                    {incomeList.map((item, index) => (
+                        <Box
+                            key={index}
+                            onClick={() => {
+                                if (item.path) navigate(item.path);
+                            }}
+                            sx={{
+                                height: "70px", 
+                                cursor: item.path ? "pointer" : "default",
+                                borderRadius: "8px",
+                                backgroundColor: "#121212",
+                                padding: "8px 12px",
+                                display: "flex",
+                                justifyContent: "space-between",
+                                alignItems: "center",
+                                boxShadow: "0 0 6px rgba(0,0,0,0.6)",
+                                transition: "background-color 0.3s",
+                                "&:hover": { backgroundColor: "#222" },
+                                userSelect: "none",
+                                fontSize: "0.85rem",
+                            }}
+                        >
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.7 }}>
+                                <Box
+                                    sx={{
+                                        width: 10,
+                                        height: 10,
+                                        borderRadius: "50%",
+                                        backgroundColor: item.color,
+                                    }}
+                                />
+                                <Box sx={{ display: "flex", flexDirection: "column" }}>
+                                    <Typography
+                                        sx={{ color: "#ffffff", fontWeight: 600, fontSize: "0.85rem" }}
+                                    >
+                                        {item.title}
+                                    </Typography>
+                                    <Typography
+                                        sx={{
+                                            color: item.color,
+                                            fontWeight: 600,
+                                            fontFamily: "'Roboto Mono', monospace",
+                                            fontSize: "0.85rem",
+                                    
+                                        }}
+                                    >
+                                        ${getFloatingValue(item.price)}
+                                    </Typography>
+                                </Box>
                             </Box>
                         </Box>
                     ))}

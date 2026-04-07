@@ -64,7 +64,7 @@ function TradeProfit() {
 
     <>
       <Header2
-        title="Trade Profit "
+        title="Daily Trade Bonus"
       />
 
       <CustomCircularProgress isLoading={loading} />
@@ -136,7 +136,7 @@ function TradeProfit() {
             }}
           >
             <Typography sx={{ fontSize: 16, fontWeight: 600 }}>
-              No  Trade Profit Bonus  Found
+              No  Daily Trade Bonus  Found
             </Typography>
             <Typography sx={{ fontSize: 13, color: '#aaa', mt: 1 }}>
               You haven’t made any  Trade Profit Bonus  yet.

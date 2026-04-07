@@ -87,7 +87,7 @@ function TermsAndConditions() {
 
                     <li style={textStyle}>
                         Earning Limit 3x (Including all Bonuses) as per your Capital
-                        (Excluding Rank Reward & Direct Partner Bonus).
+                        (Excluding Rank Reward & Direct  Bonus).
                     </li>
 
                     <li style={textStyle}>

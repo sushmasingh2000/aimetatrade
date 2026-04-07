@@ -79,7 +79,7 @@ export default function Sidebar() {
 
       <Box className="main_header">
         <IconButton onClick={handleToggle} sx={{ zIndex: 100 }}>
-          <Box component="img" src={menu} alt="menu"></Box>
+          <Box component="img" src={menu} sx={{ filter: "hue-rotate(45deg)" }} alt="menu"></Box>
         </IconButton>
         <Box
           component="img"
@@ -93,8 +93,8 @@ export default function Sidebar() {
             component="img"
             src={customer}
             alt="customer"
-            sx={{ cursor: "pointer" }}
-            // onClick={() => window.open("https://t.me/ifcinvestment", "_blank")}
+            sx={{ cursor: "pointer" ,  filter: "hue-rotate(45deg)"}}
+            onClick={() => window.open("https://t.me/AiMetaTrade", "_blank")}
           ></Box>
         </ListItemButton>
       </Box>

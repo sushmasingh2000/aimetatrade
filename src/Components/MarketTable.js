@@ -58,7 +58,7 @@ const styles = {
     background: "none",
     border: "none",
     cursor: "pointer",
-    color: active ? "#ad49ff" : "#6b7280",
+    color: active ? "#49e4ff" : "#6b7280",
     transition: "color 0.15s",
   }),
   tabUnderline: {
@@ -68,7 +68,7 @@ const styles = {
     right: 0,
     height: "2px",
     borderRadius: "9999px",
-    backgroundColor: "#ad49ff",
+    backgroundColor: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
   },
 
   // Status badge
@@ -391,7 +391,7 @@ function MaybeVisible({ minWidth, children }) {
 // ── Status badge ──────────────────────────────────────────────────────────────
 function StatusBadge({ mode }) {
   const cfg = {
-    ws:         { color: "#ad49ff", label: "LIVE",        glow: "0 0 6px #ad49ff" },
+    ws:         { color: "#49fff6", label: "LIVE",        glow: "0 0 6px #49ffff" },
     polling:    { color: "#4ade80", label: "LIVE ~2s",    glow: "0 0 6px #4ade80" },
     connecting: { color: "#fbbf24", label: "Connecting…", glow: "none"            },
   }[mode] ?? { color: "#fbbf24", label: "…", glow: "none" };

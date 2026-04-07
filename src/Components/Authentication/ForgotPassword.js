@@ -122,7 +122,7 @@ function Forgotpassword() {
 
                 <Box className="login_input">
                     <Box className="icon_login">
-                        <svg width="25" height="25" fill={'#ad49ff'}><use xlinkHref="#icon-email"></use></svg>
+                        <svg width="25" height="25" fill={'#49f3ff'}><use xlinkHref="#icon-email"></use></svg>
                     </Box>
                     <FormControl fullWidth>
                         <TextField

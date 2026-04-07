@@ -300,10 +300,10 @@ export default function Transfer() {
                             color: "#808080",
                         },
                         "& .MuiInputLabel-root.Mui-focused": {
-                            color: "#ad49ff",
+                            color: "#49eaff",
                         },
                         "& .MuiInputLabel-root.MuiFormLabel-filled": {
-                            color: "#ad49ff",
+                            color: "#49f9ff",
                         },
                         "& input::placeholder": {
                             color: "#ccc",
@@ -316,7 +316,7 @@ export default function Transfer() {
                     fullWidth
                     onClick={handleSubmit}
                     sx={{
-                        bgcolor: "#ad49ff",
+                        background: "linear-gradient(90deg, #04fcf8, #fa0ef5)",
                         fontWeight: "bold",
                         fontSize: 16,
                         "&:hover": { bgcolor: "#090a0a" },

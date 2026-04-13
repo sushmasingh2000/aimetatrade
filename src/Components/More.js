@@ -85,7 +85,7 @@ export default function More() {
               </ListItemButton>
             </ListItem>
             <ListItem>
-              <ListItemButton component={Link} to="/soon">
+              <ListItemButton component={Link} to="/forex_markets">
                 <Box component="img" src={futures} alt="futures"></Box>
                 <Typography>Forex</Typography>
               </ListItemButton>

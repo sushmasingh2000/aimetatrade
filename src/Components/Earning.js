@@ -258,6 +258,7 @@ export default function Earning() {
                             <Box sx={{ display: "flex", alignItems: "center", gap: 0.7 }}>
                                 <Box
                                     sx={{
+                                        mb:2.8,
                                         width: 10,
                                         height: 10,
                                         borderRadius: "50%",

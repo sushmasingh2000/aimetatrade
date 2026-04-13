@@ -41,6 +41,7 @@ import MyTrades from "../Trade";
 import TradeGraph from "../TradeGraph";
 import ForexMarketTable from "../ForexMarketTable";
 import ForexChart from "../ForexChart";
+import ForexMore from "../ForexMore";
 
 export const routes = [
     {
@@ -61,6 +62,14 @@ export const routes = [
             <Markets />
         </Layouts>
     },
+
+     {
+        path: "/forex_markets",
+        component: <Layouts header={false}>
+            <ForexMore />
+        </Layouts>
+    },
+    
     {
         path: "/More",
         component: <Layouts header={false} >

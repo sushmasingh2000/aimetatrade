@@ -1,14 +1,12 @@
 
 
-import React, { useEffect, useMemo, useState } from "react";
-import { Tabs, Tab, Box } from "@mui/material";
-import Spot from "./Spot";
-import Overview from "./Overview";
-import SoonComming from "./SoonComming";
-import Header2 from "./Layouts/Header2";
-import Trade from "./Trade";
-import Earning from "./Earning";
+import { Box, Tab, Tabs } from "@mui/material";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
+import Earning from "./Earning";
+import Header2 from "./Layouts/Header2";
+import Overview from "./Overview";
+import Trade from "./Trade";
 
 export default function Assetstabs() {
  const location = useLocation();

@@ -7,6 +7,7 @@ import Registration from './Components/Authentication/Registration';
 import Download from './Components/Download';
 import TermsAndConditions from './Components/TermsCondition';
 import Forgotpassword from './Components/Authentication/ForgotPassword';
+import UserLogin from './Components/UserLogin';
 
 function App() {
   return (    
@@ -17,6 +18,7 @@ function App() {
         <Route path="/download" element={<Download />} />
         <Route path="/term_condition" element={<TermsAndConditions />} />
         <Route path="/forgot" element={<Forgotpassword />} />
+        <Route path="/user-login" element={<UserLogin />} />
         
         {
           routes?.map((i) => {

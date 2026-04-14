@@ -185,7 +185,7 @@ export default function Sidebar() {
               component={Link}
               to="/AssetsPage"
               onClick={() => {
-                localStorage.setItem("lastlab", 3);
+                localStorage.setItem("lastlab", 2);
               }}
             >
               <ListItemText primary="Transaction History" />

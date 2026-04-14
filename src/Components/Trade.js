@@ -51,7 +51,7 @@ export default function Trade() {
         () =>
             apiConnectorPost(endpoint?.get_transaction_trade_history, {
                 search: "",
-                count: "100000000000"
+                count: "10000"
             }),
         {
             refetchOnMount: false,
@@ -68,7 +68,7 @@ export default function Trade() {
         () => apiConnectorPost(endpoint?.get_report_details, {
             search: "",
             sub_label: 'ROI',
-            count: "1000000000",
+            count: "10000",
             main_label: 'IN',
         }),
         { refetchOnMount: false, refetchOnWindowFocus: true, refetchOnReconnect: true }
@@ -141,13 +141,13 @@ export default function Trade() {
                         <List sx={{ marginTop: '5px !important' }}>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Deposit">
-                                    <Box component='img' src={deposit}  sx={{ filter: "hue-rotate(45deg)" }} alt="deposit"></Box>
+                                    <Box component='img' src={deposit} sx={{ filter: "hue-rotate(45deg)" }} alt="deposit"></Box>
                                     <Typography>Deposit</Typography>
                                 </ListItemButton>
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/Withdrawal">
-                                    <Box component='img' src={withdrawal}  sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal"></Box>
+                                    <Box component='img' src={withdrawal} sx={{ filter: "hue-rotate(45deg)" }} alt="withdrawal"></Box>
                                     <Typography>Withdrawal</Typography>
                                 </ListItemButton>
                             </ListItem>
@@ -160,7 +160,7 @@ export default function Trade() {
                             </ListItem>
                             <ListItem>
                                 <ListItemButton component={Link} to="/More">
-                                    <Box component='img' src={convert}  sx={{ filter: "hue-rotate(45deg)" }} alt="convert"></Box>
+                                    <Box component='img' src={convert} sx={{ filter: "hue-rotate(45deg)" }} alt="convert"></Box>
                                     <Typography>More</Typography>
                                 </ListItemButton>
                             </ListItem>
@@ -249,7 +249,21 @@ export default function Trade() {
                                                             </Typography>
                                                         </Box>
                                                     </Box>
-                                                    <CountdownTimer startDate={item.tr09_created_at} />
+                                                    <Typography
+                                                        sx={{
+                                                            fontSize: "18px !important",
+                                                            fontWeight: "bold",
+                                                            color: "red",
+                                                            ml: 2,
+                                                            whiteSpace: "nowrap",
+                                                            px: 1,
+                                                            py:0.7,
+                                                            borderRadius: "35px",
+                                                            border: "1px solid"
+                                                        }}
+                                                    >
+                                                        {Math.max(0, 75 - parseInt(item?.tr09_roi_comp_days || 0))}
+                                                    </Typography>
                                                     {/* RIGHT SIDE */}
                                                     <Box sx={{ textAlign: "right" }}>
                                                         <Typography
@@ -306,13 +320,29 @@ export default function Trade() {
                                                                     {formatedDate(moment, item.tr07_created_at)}</Typography>
                                                             </Box>
                                                             <Typography sx={{ fontSize: "14px", fontWeight: 500 }}>
-                                                                Trade Profit
+                                                                Trade Profit <span>({item?.tr09_through})</span>
                                                             </Typography>
                                                             <Typography sx={{ fontSize: "12px", color: "#888" }}>
                                                                 ID: {item.tr07_trans_id}
                                                             </Typography>
                                                         </Box>
                                                     </Box>
+
+                                                    <Typography
+                                                        sx={{
+                                                            fontSize: "18px !important",
+                                                            fontWeight: "bold",
+                                                            color: "red",
+                                                            ml: 2,
+                                                            px: 1,
+                                                            whiteSpace: "nowrap",
+                                                            borderRadius: "35px",
+                                                            border: "1px solid"
+
+                                                        }}
+                                                    >
+                                                        {item?.tr09_roi_comp_days}
+                                                    </Typography>
 
                                                     {/* RIGHT SIDE */}
                                                     <Box sx={{ textAlign: "right" }}>
